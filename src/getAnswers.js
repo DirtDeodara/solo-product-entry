@@ -7,6 +7,7 @@ function getAnswers(formData) {
         addOns: formData.getAll('add-ons'),
         medical: formData.get('medical')
     };
+    return answers;
 
 }
 export default getAnswers;

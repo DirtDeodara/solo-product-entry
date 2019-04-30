@@ -1,0 +1,12 @@
+body {
+    background-color: black;
+    color: aqua;
+    text-align: center;
+    font-size: 20px
+}
+h1 {
+    font-size: 100px;
+}
+#motto {
+    font-size: 32px;
+}
