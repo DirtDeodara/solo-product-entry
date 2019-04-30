@@ -3,7 +3,7 @@ const test = QUnit.test;
 
 test('do my forms work', function(assert) {
     //Arrange
-    const expected ={
+    const expected = {
         name: 'dirt',
         experience: 'yes',
         destination:'ski',
