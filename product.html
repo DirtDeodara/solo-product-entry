@@ -8,6 +8,78 @@
     <link rel="stylesheet" href="./src/main.css">
 </head>
 <body>
+    <form id="rekall-app">
+        <h2>Let us help bring your <em>dream</em> to <strong>life.</strong></h2>
+
+        <section>
+            <p>
+                <label for="name">Full Name:</label>
+                <input type="text" name="name" id="name" placeholder="Your name, please." required>
+            </p>
+        </section>
+
+        <section>
+           <fieldset>
+               <legend>
+                   Have you ever utilized our services before?
+               </legend>
+
+               <label>Yes</label>
+               <input type="radio" name="utilized" id="yes" value="yes" required>
+
+               <label>No</label>
+               <input type="radio" name="utilized" id="no" value="no" required>
+
+           </fieldset>
+        </section>
+
+        <section>
+            <fieldset>
+                <label for="destination">Select your destination:</label>
+                <select name="destination" id="destination" required>
+                    <option value="" hidden disabled selected>Where to?</option>
+                    <option value="ski">Ski in Antarctica</option>
+                    <option value="ocean">Explore the bottom of the ocean</option>
+                    <option value="mars">Climb the mountins of Mars</option>
+                </select>
+            </fieldset>
+        </section>
+
+        <section>
+            <p>
+                <label for="duration">Duration of stay(days):</label>
+                <input type="number" id="duration" required>
+            </p>
+        </section>
+
+        <section>
+            <fieldset>
+                <legend>
+                    Would you like to enjoy any of these add-ons?
+                </legend>
+                <div>
+                    <label for="money"></label>
+                    <input type="" value="" name="" id="">
+                </div>
+
+                <div>
+                    <label for="spouse"></label>
+                    <input type="" value="" name="" id="">
+                </div>
+
+                <div>
+                    <label for="vehicles"></label>
+                    <input type="" value="" name="" id="">
+                </div>
+
+                <div>
+                    <label for="powers"></label>
+                    <input type="" value="" name="" id="">
+                </div>
+
+            </fieldset>
+        </section>
+    </form>
     
 </body>
 </html>
