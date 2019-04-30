@@ -9,5 +9,5 @@ form.addEventListener('submit', (event) => {
 
     const formData = new FormData(form);
     const answers = getAnswers(formData);
-    console.log( answers);
+    console.log(answers);
 });
