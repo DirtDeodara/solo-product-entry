@@ -8,6 +8,5 @@ function getAnswers(formData) {
         medical: formData.get('medical')
     };
     return answers;
-
 }
 export default getAnswers;

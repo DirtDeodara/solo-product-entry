@@ -1,2 +1,2 @@
-import './make-order.test.js';
-import './compile-order.js';
+import './get-answers.test.js';
+import './customer-api.test.js';

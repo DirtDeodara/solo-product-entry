@@ -1,14 +1,14 @@
 const test = QUnit.test;
-//import my function here
+import compileApi from '../src/customer-api.js';
 
-//QUnit.module('compile order');
+QUnit.module('compile order');
 
 test('round trip order test', (assert) => {
 
     const customer = { name: 'tester' };
 
-    orderFormApi.save(costumer);
-    const result = orderFormApi.get();
+    compileApi.save(customer);
+    const result = compileApi.get();
     
     assert.deepEqual(result, customer);
 });
