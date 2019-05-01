@@ -1,0 +1,15 @@
+dl {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    color: aqua;
+}
+
+dt, dd {
+    display: inline-block;
+    padding: 8px 10px;
+}
+
+dt {
+    background-color: black;
+    text-align: right;
+}

@@ -9,3 +9,18 @@ const medical = document.getElementById('medical');
 
 const customer = customerApi.get();
 
+console.log(customer);
+
+if(!customer) {
+    window.location = './';
+}
+
+name.textContent = applicant.name;
+experience.textContent = customer.experience;
+destination.textContent = customer.destination;
+duration.textContent = customer.duration;
+addOns.textContent = customer.addOns;
+if(customer.addOns) {
+    addOns.textContent = customer.addOns.join(', ');
+}
+medical.textContent = customer.medical;
