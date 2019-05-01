@@ -10,5 +10,6 @@ form.addEventListener('submit', (event) => {
     const formData = new FormData(form);
     const answers = getAnswers(formData);
     customerApi.save(answers);
-    //console.log(answers);
+   
+    window.location = '../index.html';
 });
