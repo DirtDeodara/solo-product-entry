@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Info Request</title>
+    <link rel="stylesheet" href="./src/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
+
+</head>
+<body>
+    <form id="rekall-app">
+
+        <header id="product-header">
+
+            <img src="assets/Rekall.jpg">
+            <p id="motto"> “cheaper, safer, and better than the real thing.”</p>
+
+        </header>
+
+        <p>
+            Fill out this quick questionaire and we will contact you to set up an screeing
+        </p>
+
+       
+        <p>
+            <label for="name">Full Name:</label>
+            <input type="text" name="name" id="name" placeholder="Your name, please." required>
+        </p>
+       
+
+       
+        <fieldset>
+           <legend>
+               Have you ever utilized our services before?
+            </legend>
+
+            <label>Yes</label>
+            <input type="radio" name="experience" id="yes" value="yes" required>
+
+            <label>No</label>
+            <input type="radio" name="experience" id="no" value="no" required>
+
+        </fieldset>
+      
+
+       
+        <fieldset>
+            <label for="destination">Select your destination:</label>
+            <select name="destination" id="destination" required>
+                <option value="" hidden disabled selected>Where to?</option>
+                <option value="ski">Ski in Antarctica</option>
+                <option value="ocean">Explore the bottom of the ocean</option>
+                <option value="mars">Climb the mountins of Mars</option>
+            </select>
+                
+            <p>
+                <label for="duration">Duration of stay(days):</label>
+                <input type="number" name="duration" id="duration" required>
+            </p>
+        </fieldset>
+       
+        <fieldset>
+            <legend>
+                Would you like to enjoy any of these add-ons?
+            </legend>
+
+            <div>
+                <label for="wealth">Wealth</label>
+                <input type="checkbox" value="wealth" name="add-ons" id="wealth">
+            </div>
+
+            <div>
+                <label for="companion">Companion</label>
+                <input type="checkbox" value="companion" name="add-ons" id="companion">
+            </div>
+
+            <div>
+                <label for="super-powers">Super Powers</label>
+                <input type="checkbox" value="super-powers" name="add-ons" id="super-powers">
+            </div>
+
+            <div>
+                <label for="time-travel">Time Travel</label>
+                <input type="checkbox" value="time-travel" name="add-ons" id="time-travel">
+            </div>
+        </fieldset>
+            
+        <fieldset>
+            <label for="medical">Any known medical issues?</label>
+            <br />
+            <textarea name="medical" id="medical" placeholder="Your info is safe with us."></textarea>
+        </fieldset>
+
+        <h3>Ready to live the <em>Life</em> of your <em>Dreams</em>?</h3>
+        <a id='goHome' href="index.html"></a><button>Request more information</button></a>
+    </form>
+
+    <script src="./src/product.js" type="module"></script>
+</body>
+</html>
