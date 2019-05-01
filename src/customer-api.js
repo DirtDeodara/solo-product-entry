@@ -1,4 +1,5 @@
 const customerApi = {
+    storage: localStorage,
     save(customer) {
         const json = JSON.stringify(customer);
         localStorage.setItem('customer', json);
