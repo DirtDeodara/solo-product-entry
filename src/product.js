@@ -1,4 +1,6 @@
 import getAnswers from '../src/getAnswers.js';
+import customerApi from './customer-api.js';
+
 
 const form = document.getElementById('rekall-app');
 
@@ -7,5 +9,6 @@ form.addEventListener('submit', (event) => {
 
     const formData = new FormData(form);
     const answers = getAnswers(formData);
-    console.log(answers);
+    customerApi.save(answers);
+    //console.log(answers);
 });

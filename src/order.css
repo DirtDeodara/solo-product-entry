@@ -1,15 +1,38 @@
 dl {
     display: grid;
     grid-template-columns: max-content 1fr;
-    color: aqua;
+    /*align-content: center;*/
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30%;
+    width: 15%;
+    margin: auto;
+    
 }
 
 dt, dd {
     display: inline-block;
-    padding: 8px 10px;
+    padding: 18px 10px;
 }
 
 dt {
-    background-color: black;
-    text-align: right;
+    background:black;
+    color: aqua;
+    font-size: 1.3em;
+    border: 4px double aqua;
+    
+}
+
+dt:after{
+    content: " -";
+}
+
+dd {
+    background: aqua;
+    color: black;
+    font-size: 1.3em;
+    border: 4px double black;
+    text-align: left; 
 }
