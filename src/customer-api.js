@@ -1,13 +1,33 @@
 const customerApi = {
     storage: localStorage,
     save(customer) {
-        const json = JSON.stringify(customer);
-        localStorage.setItem('customer', json);
+        //get our customer array
+        const customers = customerApi.getAll();
+        //add this customer to the array
+        customers.push(customer);
+        //serialize json
+        const json = JSON.stringify(customers);
+        //save to local storage
+        customerApi.storage.setItem('customers', json);
     },
+
     get() {
-        const json = localStorage.getItem('customer');
-        const customer = JSON.parse(json);
-        return customer;
+        //use get all to fetch my customer data
+        const customers = customerApi.getAll();
+        //return it
+        return customers[0];
+    },
+
+    getAll() {
+        //get from local storage
+        const json = customerApi.storage.getItem('customers');
+        //decerealize(hehe) to object
+        let customers = JSON.parse(json);
+        if(!customers) {
+            customers = [];
+        }
+
+        return customers;
     }
 };
 

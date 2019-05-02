@@ -1,10 +1,9 @@
 const test = QUnit.test;
-import compileApi from '../src/customer-api.js';
 import customerApi from '../src/customer-api.js';
 
 QUnit.module('compile order');
 
-compileApi.storage = sessionStorage;
+customerApi.storage = sessionStorage;
 const testStorage = sessionStorage;
 
 test('round trip order test', (assert) => {
@@ -12,8 +11,8 @@ test('round trip order test', (assert) => {
 
     const customer = { name: 'tester' };
 
-    compileApi.save(customer);
-    const result = compileApi.get();
+    customerApi.save(customer);
+    const result = customerApi.get();
     
     assert.deepEqual(result, customer);
 });
@@ -22,8 +21,26 @@ test('no customers in local storage returns an empty array', (assert) => {
     testStorage.removeItem('customers');
     const expected = [];
 
-    const customers = compileApi.getAll();
+    const customers = customerApi.getAll();
 
     assert.deepEqual(customers, expected);
 });
+
+test('two saves return an array with two items', (assert) => {
+    testStorage.removeItem('customers');
+    //arrange
+    const customer1 = { name: 'tester1' };
+    const customer2 = { name: 'tester2' };
+    const expected = [customer1, customer2];
+
+    customerApi.save(customer1);
+    customerApi.save(customer2);
+
+    //act
+    const customers = customerApi.getAll();
+
+    //assert
+    assert.deepEqual(customers, expected);
+});
+
 
