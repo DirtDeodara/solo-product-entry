@@ -1,0 +1,24 @@
+table {
+    width: 100%;
+    max-width: 750px;
+    margin: auto;
+    border-collapse: collapse;
+    border-spacing:5em;
+    border: 3px double aqua;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+thead {
+    font-weight: bolder;
+    color: white;
+    background: black;
+}
+
+tbody tr:nth-child(even) {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+td {
+    padding: 8px 5px;
+}

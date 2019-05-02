@@ -17,6 +17,10 @@ fieldset {
     border-color: aqua;
     border: 10px double;
 }
+button {
+    margin-bottom: 90px;
+}
+
 button:hover {
     box-shadow: 0 0 40px aqua;
 }
@@ -24,25 +28,13 @@ button:hover {
     position: absolute;
     left: 0;
     right: 0;
-    top: 30%;
+    top: 20%;
     width: 50%;
     margin: auto;
 }
 #logo:hover {
     box-shadow: 0 0 80px aqua;
 }
-#presser {
-    border: 4px solid aqua;
-    border-radius: 100%;    
-    background-color:black;
-    box-shadow: 0 0 80px aqua;
-    display: inline-block;
-    height: 80px;
-    width: 80px;
-    margin-left: -10px;
-    margin-top: 760PX;
-}
-
-#presser:hover {
-    background-color: aqua;
+.rekall {
+    padding-top: 100px;
 }
