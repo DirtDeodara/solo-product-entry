@@ -1,6 +1,6 @@
 import customerApi from './customer-api.js';
 
-const tbody = document.getElementById('customers')
+const tbody = document.getElementById('customers');
 
 const customers = customerApi.getAll();
 

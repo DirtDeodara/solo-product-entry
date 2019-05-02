@@ -7,7 +7,7 @@ customerApi.storage = sessionStorage;
 const testStorage = sessionStorage;
 
 test('round trip order test', (assert) => {
-    testStorage.removeItem('customers')
+    testStorage.removeItem('customers');
 
     const customer = { name: 'tester' };
 
