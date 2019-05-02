@@ -1,6 +1,6 @@
 table {
     width: 100%;
-    max-width: 750px;
+    max-width: 900px;
     margin: auto;
     border-collapse: collapse;
     border-spacing:5em;
@@ -16,9 +16,27 @@ thead {
 }
 
 tbody tr:nth-child(even) {
-    background: rgba(0, 0, 0, 0.1);
+    background:rgb(3, 253, 253);
+    color: black;
 }
 
 td {
     padding: 8px 5px;
+}
+.presserIndex {
+    border: 4px solid aqua;
+    border-radius: 100%;    
+    background-color:black;
+    box-shadow: 0 0 80px aqua;
+    display: inline-block;
+    height: 120px;
+    width: 120px;
+    margin-left: -10px;
+    margin-top: 160px;
+    
+}
+
+.presserIndex:hover {
+    background-color: aqua;
+
 }

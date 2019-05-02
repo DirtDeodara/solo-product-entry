@@ -17,6 +17,23 @@
 
 }
 
+#presserOrder {
+    border: 4px solid aqua;
+    border-radius: 100%;    
+    background-color:black;
+    box-shadow: 0 0 80px aqua;
+    display: inline-block;
+    height: 120px;
+    width: 120px;
+    margin-left: -10px;
+    margin-top: 30px;
+}
+
+#presserOrder:hover {
+    background-color: aqua;
+
+}
+
 #presserCustomer {
     border: 4px solid aqua;
     border-radius: 100%;    
@@ -32,3 +49,4 @@
 #presserCustomer:hover {
     background-color: aqua;
 
+}
