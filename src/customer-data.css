@@ -1,0 +1,42 @@
+table {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    border-collapse: collapse;
+    border-spacing:5em;
+    border: 3px double aqua;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+thead {
+    font-weight: bolder;
+    color: white;
+    background: black;
+}
+
+tbody tr:nth-child(even) {
+    background:rgb(3, 253, 253);
+    color: black;
+}
+
+td {
+    padding: 8px 5px;
+}
+.presserIndex {
+    border: 4px solid aqua;
+    border-radius: 100%;    
+    background-color:black;
+    box-shadow: 0 0 80px aqua;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-left: -10px;
+    margin-top: 160px;
+    
+}
+
+.presserIndex:hover {
+    background-color: aqua;
+
+}
