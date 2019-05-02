@@ -11,7 +11,7 @@ const customerApi = {
 
     get() {
         const customers = customerApi.getAll();
-        return customers[0];
+        return customers[customers.length - 1];
     },
 
     getAll() { 
