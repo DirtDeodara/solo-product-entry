@@ -7,9 +7,12 @@ const duration = document.getElementById('duration');
 const addOns = document.getElementById('add-ons');
 const medical = document.getElementById('medical');
 
-const customer = customerApi.get();
+// get the customer name
+const searchParams = new URLSearchParams(window.location.search);
+const id = searchParams.get('name');
 
-
+// get our customer from the API
+const customer = customerApi.get(id);
 
 if(!customer) {
     window.location = './';
