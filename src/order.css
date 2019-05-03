@@ -1,23 +1,4 @@
 
-/*.presserIndex {
-    border: 4px solid aqua;
-    border-radius: 100%;    
-    background-color:black;
-    box-shadow: 0 0 80px aqua;
-    display: inline-block;
-    height: 120px;
-    width: 120px;
-    margin-left: 1px;
-    margin-top: 760px;
-}
-.homeButton {
-    opacity: 0;
-    transition: .3s;
-}
-.presserIndex:hover .homeButton {
-    opacity: 1;
-    transition: .3s;
-}*/
 body {
     background-color: black;
     color: aqua;
@@ -58,3 +39,41 @@ dd {
     border: 4px double black;
     text-align: left; 
 }
+.rekall {
+    margin-top: 100px;
+}
+.haloButton {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    border: 4px solid aqua;
+    border-radius: 100%;
+    box-shadow: 0px 0px 70px aqua;
+    text-decoration: none;
+    margin-top: 800px;
+ }
+ 
+ .haloButton:hover .navButton {
+    opacity: 1;
+    transition: 1s;
+    box-shadow: 0px 0px 70px aqua;
+    text-decoration: none;
+ }
+ 
+ .navButton{
+    font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center; 
+    color: black;
+    background-color: aqua;
+    text-decoration: none;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    opacity: 0;
+    transition: 1s;
+ }
