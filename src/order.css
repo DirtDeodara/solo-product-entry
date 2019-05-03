@@ -1,5 +1,5 @@
 
-.presserIndex {
+/*.presserIndex {
     border: 4px solid aqua;
     border-radius: 100%;    
     background-color:black;
@@ -7,15 +7,17 @@
     display: inline-block;
     height: 120px;
     width: 120px;
-    margin-left: -10px;
+    margin-left: 1px;
     margin-top: 760px;
-    
 }
-
-.presserIndex:hover {
-    background-color: aqua;
-
+.homeButton {
+    opacity: 0;
+    transition: .3s;
 }
+.presserIndex:hover .homeButton {
+    opacity: 1;
+    transition: .3s;
+}*/
 
 dl {
     display: grid;
@@ -27,13 +29,12 @@ dl {
     top: 30%;
     width: 25%;
     margin: auto; 
+    
 }
-
 dt, dd {
     display: inline-block;
     padding: 18px 10px;
 }
-
 dt {
     background:black;
     color: aqua;
@@ -41,11 +42,9 @@ dt {
     border: 4px double aqua;
     
 }
-
 dt:after{
     content: " -";
 }
-
 dd {
     background: aqua;
     color: black;

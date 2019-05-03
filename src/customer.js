@@ -14,9 +14,9 @@ const id = searchParams.get('name');
 // get our customer from the API
 const customer = customerApi.get(id);
 
-if(!customer) {
-    window.location = './';
-}
+//if(!customer) {
+//    window.location = './';
+//}
 
 name.textContent = customer.name;
 experience.textContent = customer.experience;

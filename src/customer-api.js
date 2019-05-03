@@ -9,9 +9,15 @@ const customerApi = {
         customerApi.storage.setItem('customers', json);
     },
 
-    get() {
+    get(name) {
         const customers = customerApi.getAll();
-        return customers[customers.length - 1];
+        for(let i = 0; i < customers.length; i++) {
+            const customer = customers[i];
+            if(customer.name === name) {
+        
+                return customer;
+            }
+        }
     },
 
     getAll() { 
@@ -22,7 +28,6 @@ const customerApi = {
         if(!customers) {
             customers = [];
         }
-        console.log('customer', customers);
         return customers;
     }
 };

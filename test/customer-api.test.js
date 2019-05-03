@@ -1,7 +1,7 @@
 const test = QUnit.test;
 import customerApi from '../src/customer-api.js';
 
-QUnit.module('compile order');
+QUnit.module('customer api');
 
 customerApi.storage = sessionStorage;
 const testStorage = sessionStorage;
@@ -9,12 +9,14 @@ const testStorage = sessionStorage;
 test('round trip order test', (assert) => {
     testStorage.removeItem('customers');
 
-    const customer = { name: 'tester' };
+    const customer1 = { name: 'tester1' };
+    const customer2 = { name: 'tester2' };
 
-    customerApi.save(customer);
-    const result = customerApi.get();
+    customerApi.save(customer1);
+    customerApi.save(customer2);
+    const result = customerApi.get(customer2.name);
     
-    assert.deepEqual(result, customer);
+    assert.deepEqual(result, customer2);
 });
 
 test('no customers in local storage returns an empty array', (assert) => {
