@@ -2,7 +2,7 @@ function makeCustomerRow(customer) {
     const tr = document.createElement('tr');
   
     const nameCell = makeNameCell(customer.name);
-    const destinationCell = makeTextCell(customer.destination)
+    const destinationCell = makeTextCell(customer.destination);
     const durationCell = makeTextCell(customer.duration);
     const addOnsCell = makeAddOnsCell(customer.addOns);
     
@@ -32,7 +32,7 @@ function makeNameCell(name) {
     // also use the customer's name as the display text for the link
     link.textContent = name;
     // add the link to the name cell
-    nameCell.appendChild(link)
+    nameCell.appendChild(link);
     
     return nameCell; 
 }
