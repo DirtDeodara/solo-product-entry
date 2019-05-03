@@ -30,13 +30,14 @@
     transition: .3s;
 }*/
 
-body {
+/* body {
     display: flex;
     background-color: black;
     justify-content: center;
- }
+ } */
  
  .haloButton {
+    display: inline-block;
     height: 100px;
     width: 100px;
     background-color: black;
@@ -44,6 +45,7 @@ body {
     border-radius: 100%;
     box-shadow: 0px 0px 70px aqua;
     text-decoration: none;
+    margin-top: 800px;
  }
  
  .haloButton:hover .navButton {
@@ -55,10 +57,11 @@ body {
  
  .navButton{
     font-family: 'Open Sans', sans-serif;
+    display: inline-block;
     display: flex;
     position: relative;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
     color: black;
     background-color: aqua;
     text-decoration: none;
@@ -67,4 +70,5 @@ body {
     border-radius: 100%;
     opacity: 0;
     transition: 1s;
+    
  }

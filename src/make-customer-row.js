@@ -15,6 +15,7 @@ function makeCustomerRow(customer) {
 }
 
 function makeNameCell(name) {
+    
     //we are creating the table cell    
     const nameCell = document.createElement('td');
     // creating the anchor link <a>
