@@ -21,6 +21,7 @@ dl {
 dt, dd {
     display: inline-block;
     padding: 18px 10px;
+    
 }
 dt {
     background:black;
