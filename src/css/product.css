@@ -22,7 +22,8 @@ button {
 }
 
 button:hover {
-    box-shadow: 0 0 40px aqua;
+    box-shadow: 0 0 60px aqua;
+    transition: .2s;
 }
 #logo {
     position: absolute;

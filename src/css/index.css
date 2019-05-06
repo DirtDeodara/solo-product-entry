@@ -11,19 +11,6 @@ h1 {
 #motto {
     font-size: 32px;
 }
-fieldset {
-    margin: 0 auto;
-    width: 300px;
-    border-color: aqua;
-    border: 10px double;
-}
-button {
-    margin-bottom: 90px;
-}
-
-button:hover {
-    box-shadow: 0 0 40px aqua;
-}
 #logo {
     position: absolute;
     left: 0;
